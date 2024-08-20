@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <style>
+      body {
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        font-family: 'Poppins', sans-serif;
+    
+      }
+      .form-container {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .form-label {
+        font-size: 0.95rem;
+      }
+      .form-input {
+        transition: box-shadow 0.3s ease;
+      }
+      .form-input:focus {
+        box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.3);
+      }
+      .btn-primary {
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        transition: background 0.3s ease;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(90deg, #5a67d8, #6b46c1);
+      }
+      .btn-secondary {
+        background: linear-gradient(90deg, #fc5c7d, #6a82fb);
+        transition: background 0.3s ease;
+      }
+      .btn-secondary:hover {
+        background: linear-gradient(90deg, #fc5c7d, #ff5b5b);
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <form class="form-container bg-white p-8 w-full max-w-lg">
+      <h2 class="text-3xl font-semibold mb-8 text-center text-gray-700">Input Biodata</h2>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="nik"
+          >NIK</label
+        >
+        <input
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="nik"
+          type="text"
+        />
+      </div>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="nama"
+          >Nama</label
+        >
+        <input
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="nama"
+          type="text"
+        />
+      </div>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="tempat"
+          >Tempat Lahir</label
+        >
+        <input
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="tempat"
+          type="text"
+        />
+      </div>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="tanggal"
+          >Tanggal Lahir</label
+        >
+        <input
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="tanggal"
+          type="text"
+        />
+      </div>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="kelamin"
+          >Jenis Kelamin</label
+        >
+        <input
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="kelamin"
+          type="text"
+        />
+      </div>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="alamat"
+          >Alamat</label
+        >
+        <input
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="alamat"
+          type="text"
+        />
+      </div>
+      
+      <div class="mb-6 flex items-center">
+        <label
+          class="form-label text-gray-700 font-semibold mr-4 w-1/3"
+          for="agama"
+          >Agama</label
+        >
+        <select
+          class="form-input shadow border rounded-lg w-2/3 py-3 px-4 text-gray-700 focus:outline-none"
+          id="agama"
+        >
+          <option value="">Pilih</option>
+          <option value="islam">Islam</option>
+          <option value="katolik">Katolik</option>
+          <option value="protestan">Protestan</option>
+          <option value="hindu">Hindu</option>
+          <option value="budha">Budha</option>
+        </select>
+      </div>
+      
+      <div class="flex items-center justify-around mt-8">
+        <button
+          class="btn-primary text-white font-bold py-3 px-6 rounded-lg focus:outline-none"
+          type="button"
+        >
+          Send
+        </button>
+        <button
+          class="btn-secondary text-white font-bold py-3 px-6 rounded-lg focus:outline-none"
+          type="button"
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
